@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+html {
+  /* height of sticky header */
+}
+
 body {
   background: url('./assets/bg.png') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -9,7 +13,14 @@ body {
 }
 
 .content-section {
-  margin: 72px 0;
+  height: 100vh;
+
+  &:before {
+    height: 74px;
+    content: "";
+    display:block;
+    visibility: hidden;
+  }
 }
 
 .cursor-pointer {
