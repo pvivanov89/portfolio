@@ -2,56 +2,59 @@
   "profile": {
     "id": 1,
     "avatarUrl": "",
-    "name": {
-      "en": "Pavel Ivanov",
-      "de": ""
+    "en": {
+      "name": "Pasha",
+      "subTitle": "Sub title",
+      "subText": "sub text",
+      "mainText": "main text",
+      "projectsMainPageTitle": "Projects title"
     },
-    "subTitle": {
-      "en": "",
-      "de": ""
-    },
-    "subText": {
-      "en": "",
-      "de": ""
-    },
-    "mainText": {
-      "en": "",
-      "de": ""
+    "de": {
+      "name": "",
+      "subTitle": "",
+      "subText": "",
+      "mainText": "",
+      "projectsMainPageTitle": ""
     }
-  },
-  "projectsMainPageTitle": {
-    "en": "",
-    "de": ""
   },
   "projects": [
     {
       "id": 1,
       "name": "perth",
-      "title": {
-        "en": "",
-        "de": ""
+      "en": {
+        "title": ""
+      },
+      "de": {
+        "title": ""
       },
       "url": "",
+      "imageUrl": "",
       "isMain": true
     },
     {
       "id": 2,
-      "name": "perth2",
-      "title": {
-        "en": "",
-        "de": ""
+      "name": "perth",
+      "en": {
+        "title": ""
+      },
+      "de": {
+        "title": ""
       },
       "url": "",
+      "imageUrl": "",
       "isMain": true
     },
     {
       "id": 3,
-      "name": "perth3",
-      "title": {
-        "en": "",
-        "de": ""
+      "name": "perth",
+      "en": {
+        "title": ""
+      },
+      "de": {
+        "title": ""
       },
       "url": "",
+      "imageUrl": "",
       "isMain": true
     }
   ],
@@ -61,9 +64,11 @@
   "contacts": {
     "address": {
       "icon": "",
-      "value": {
-        "en": "",
-        "de": ""
+      "en": {
+        "value": ""
+      },
+      "de": {
+        "value": ""
       }
     },
     "phone": {

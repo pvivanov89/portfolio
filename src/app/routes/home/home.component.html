@@ -3,10 +3,10 @@
   <section class="content-section py-4">
     <div class="row">
       <div class="col-sm-12 col-md-4">
-        <h2>{{data.profile.name.en}}</h2>
-        <h3>Pashka korotkometrazhka</h3>
+        <h2>{{data.profile.name}}</h2>
+        <h3>{{data.profile.subTitle}}</h3>
         <p class="mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, eius error et harum illum in itaque natus necessitatibus nemo porro quas quisquam repellat sequi similique soluta tempora voluptatibus voluptatum?
+          {{data.profile.subText}}
         </p>
       </div>
     </div>
@@ -17,15 +17,13 @@
   <section class="content-section py-4">
     <div class="row">
       <div class="col-sm-12 col-md-4">
-        <h1>Pavel Ivanov</h1>
-        <h3>Pashka korotkometrazhka</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, eius error et harum illum in itaque natus necessitatibus nemo porro quas quisquam repellat sequi similique soluta tempora voluptatibus voluptatum?
+          {{data.profile.mainText}}
         </p>
       </div>
 
       <div class="col-sm-12 col-md-4">
-        <img src="https://via.placeholder.com/225x300" alt="">
+        <img [src]="data.profile.avatarUrl" alt="">
       </div>
     </div>
   </section>
