@@ -1,0 +1,83 @@
+{
+  "profile": {
+    "id": 1,
+    "avatarUrl": "",
+    "en": {
+      "name": "Pasha",
+      "subTitle": "Sub title",
+      "subText": "sub text",
+      "mainText": "main text",
+      "projectsMainPageTitle": "Projects title"
+    },
+    "de": {
+      "name": "",
+      "subTitle": "",
+      "subText": "",
+      "mainText": "",
+      "projectsMainPageTitle": ""
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "suburb-ranking",
+      "en": {
+        "title": "Perth suburb ranking and visualization"
+      },
+      "de": {
+        "title": ""
+      },
+      "url": "https://www.kaggle.com/embed/pavelivanov89/perth-suburb-ranking-and-visualization?kernelSessionId=79218528",
+      "imageUrl": "",
+      "isMain": true
+    },
+    {
+      "id": 2,
+      "name": "heart-set",
+      "en": {
+        "title": "Analysis of heart failure set"
+      },
+      "de": {
+        "title": ""
+      },
+      "url": "https://www.kaggle.com/embed/pavelivanov89/analysis-of-heart-failure-set?kernelSessionId=79378431",
+      "imageUrl": "",
+      "isMain": true
+    },
+    {
+      "id": 3,
+      "name": "price-prediction",
+      "en": {
+        "title": "Price prediction regression model - 84%"
+      },
+      "de": {
+        "title": ""
+      },
+      "url": "https://www.kaggle.com/embed/pavelivanov89/price-prediction-regression-model-84?kernelSessionId=79300432",
+      "imageUrl": "",
+      "isMain": true
+    }
+  ],
+  "cv": {
+
+  },
+  "contacts": {
+    "address": {
+      "icon": "",
+      "en": {
+        "value": ""
+      },
+      "de": {
+        "value": ""
+      }
+    },
+    "phone": {
+      "icon": "",
+      "value": ""
+    },
+    "email": {
+      "icon": "",
+      "value": ""
+    }
+  }
+}
