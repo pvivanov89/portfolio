@@ -10,3 +10,13 @@ export class NoSanitizePipe implements PipeTransform {
     return this.domSanitizer.bypassSecurityTrustHtml(html);
   }
 }
+
+@Pipe({ name: 'safeResourceUrl' })
+export class SafeResourceUrlPipe implements PipeTransform {
+  constructor(private domSanitizer: DomSanitizer) {
+
+  }
+  transform(html: string): SafeHtml {
+    return this.domSanitizer.bypassSecurityTrustResourceUrl(html);
+  }
+}

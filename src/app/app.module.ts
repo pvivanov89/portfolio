@@ -8,7 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { NoSanitizePipe } from './pipes/no-sanitize';
+import { NoSanitizePipe, SafeResourceUrlPipe } from './pipes/no-sanitize';
 import { ProjectDetailsComponent } from './routes/project-details/project-details.component';
 import { ProjectsListComponent } from './routes/projects-list/projects-list.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -33,7 +33,8 @@ const useLang = langs.find(x => navigator.language.indexOf(x) > 0) ? navigator.l
     NoSanitizePipe,
     ProjectDetailsComponent,
     ProjectsListComponent,
-    EmbeddedProjectComponent
+    EmbeddedProjectComponent,
+    SafeResourceUrlPipe
   ],
   imports: [
     BrowserModule,

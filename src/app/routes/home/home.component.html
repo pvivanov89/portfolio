@@ -38,7 +38,10 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-12 col-md-4" *ngFor="let item of data.projects">
+      <div class="col-sm-12 col-md-4 cursor-pointer"
+           *ngFor="let item of data.projects"
+           routerLink="/projects/{{item.name}}"
+      >
         <ng-container *ngIf="item.isMain">
           <h3>{{item.title}}</h3>
           <img class="w-auto"

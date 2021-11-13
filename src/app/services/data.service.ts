@@ -49,4 +49,8 @@ export class DataService {
     }
     return value;
   }
+
+  getProjectByName(name: string): any {
+    return this._data.getValue().projects?.find(x => x.name === name) || null;
+  }
 }

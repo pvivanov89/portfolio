@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-embedded-project',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./embedded-project.component.scss']
 })
 export class EmbeddedProjectComponent implements OnInit {
+  @Input() title: string;
+  @Input() url: string;
 
   constructor() { }
 

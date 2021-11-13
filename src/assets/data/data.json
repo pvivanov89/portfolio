@@ -20,40 +20,40 @@
   "projects": [
     {
       "id": 1,
-      "name": "perth",
+      "name": "suburb-ranking",
       "en": {
-        "title": "Perth"
+        "title": "Perth suburb ranking and visualization"
       },
       "de": {
         "title": ""
       },
-      "url": "",
+      "url": "https://www.kaggle.com/embed/pavelivanov89/perth-suburb-ranking-and-visualization?kernelSessionId=79218528",
       "imageUrl": "",
       "isMain": true
     },
     {
       "id": 2,
-      "name": "perth",
+      "name": "heart-set",
       "en": {
-        "title": ""
+        "title": "Analysis of heart failure set"
       },
       "de": {
         "title": ""
       },
-      "url": "",
+      "url": "https://www.kaggle.com/embed/pavelivanov89/analysis-of-heart-failure-set?kernelSessionId=79378431",
       "imageUrl": "",
       "isMain": true
     },
     {
       "id": 3,
-      "name": "perth",
+      "name": "price-prediction",
       "en": {
-        "title": ""
+        "title": "Price prediction regression model - 84%"
       },
       "de": {
         "title": ""
       },
-      "url": "",
+      "url": "https://www.kaggle.com/embed/pavelivanov89/price-prediction-regression-model-84?kernelSessionId=79300432",
       "imageUrl": "",
       "isMain": true
     }
