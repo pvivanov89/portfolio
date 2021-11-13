@@ -4,6 +4,7 @@ import { HomeComponent } from './routes/home/home.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ProjectsListComponent } from './routes/projects-list/projects-list.component';
 import { ProjectDetailsComponent } from './routes/project-details/project-details.component';
+import { DataResolver } from './services/data-resolver';
 
 const routes: Routes = [
   {
@@ -22,7 +23,10 @@ const routes: Routes = [
         path: 'projects/:id',
         component: ProjectDetailsComponent
       }
-    ]
+    ],
+    resolve: {
+      data: DataResolver
+    }
   }
 ];
 

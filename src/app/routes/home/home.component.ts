@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +7,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  test: any;
-  constructor(private http: HttpClient) { }
+
+  constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
-    this.http.get('/assets/html/ranking.html', {responseType: 'text'}).subscribe(r => {
-      this.test = r;
-    })
+
   }
 
 }

@@ -1,61 +1,64 @@
-<!-- main -->
-<section class="content-section py-4">
-  <div class="row">
-    <div class="col-sm-12 col-md-4">
-      <h2>Dr. Pavel Ivanov</h2>
-      <h3>Pashka korotkometrazhka</h3>
-      <p class="mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, eius error et harum illum in itaque natus necessitatibus nemo porro quas quisquam repellat sequi similique soluta tempora voluptatibus voluptatum?
-      </p>
+<ng-container *ngIf="dataService.data$ | async as data">
+  <!-- main -->
+  <section class="content-section py-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <h2>{{data.profile.name.en}}</h2>
+        <h3>Pashka korotkometrazhka</h3>
+        <p class="mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, eius error et harum illum in itaque natus necessitatibus nemo porro quas quisquam repellat sequi similique soluta tempora voluptatibus voluptatum?
+        </p>
+      </div>
     </div>
-  </div>
-</section>
-<!-- main end -->
+  </section>
+  <!-- main end -->
 
-<!-- about -->
-<section class="content-section py-4">
-  <div class="row">
-    <div class="col-sm-12 col-md-4">
-      <h1>Pavel Ivanov</h1>
-      <h3>Pashka korotkometrazhka</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, eius error et harum illum in itaque natus necessitatibus nemo porro quas quisquam repellat sequi similique soluta tempora voluptatibus voluptatum?
-      </p>
+  <!-- about -->
+  <section class="content-section py-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <h1>Pavel Ivanov</h1>
+        <h3>Pashka korotkometrazhka</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, eius error et harum illum in itaque natus necessitatibus nemo porro quas quisquam repellat sequi similique soluta tempora voluptatibus voluptatum?
+        </p>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <img src="https://via.placeholder.com/225x300" alt="">
+      </div>
     </div>
+  </section>
+  <!-- about end -->
 
-    <div class="col-sm-12 col-md-4">
-      <img src="https://via.placeholder.com/225x300" alt="">
-    </div>
-  </div>
-</section>
-<!-- about end -->
+  <!-- portfolio -->
+  <section class="py-4">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Some Title</h1>
 
-<!-- portfolio -->
-<section class="py-4">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Some Title</h1>
-
-      <iframe src="https://www.kaggle.com/embed/pavelivanov89/perth-suburb-ranking-and-visualization?kernelSessionId=79218528" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Perth suburb ranking and visualization"></iframe>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12 col-md-4">
-      <h3>Project</h3>
-      <img class="w-100" src="https://via.placeholder.com/300x400" alt="">
+        <iframe src="https://www.kaggle.com/embed/pavelivanov89/perth-suburb-ranking-and-visualization?kernelSessionId=79218528" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Perth suburb ranking and visualization"></iframe>
+      </div>
     </div>
 
-    <div class="col-sm-12 col-md-4">
-      <h3>Project</h3>
-      <img class="w-100" src="https://via.placeholder.com/300x400" alt="">
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <h3>Project</h3>
+        <img class="w-100" src="https://via.placeholder.com/300x400" alt="">
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <h3>Project</h3>
+        <img class="w-100" src="https://via.placeholder.com/300x400" alt="">
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <h3>Project</h3>
+        <img class="w-100" src="https://via.placeholder.com/300x400" alt="">
+      </div>
     </div>
 
-    <div class="col-sm-12 col-md-4">
-      <h3>Project</h3>
-      <img class="w-100" src="https://via.placeholder.com/300x400" alt="">
-    </div>
-  </div>
+  </section>
+  <!-- portfolio end -->
 
-</section>
-<!-- portfolio end -->
+</ng-container>

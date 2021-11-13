@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "id": 1,
+    "avatarUrl": "",
+    "name": {
+      "en": "Pavel Ivanov",
+      "de": ""
+    },
+    "subTitle": {
+      "en": "",
+      "de": ""
+    },
+    "subText": {
+      "en": "",
+      "de": ""
+    },
+    "mainText": {
+      "en": "",
+      "de": ""
+    }
+  },
+  "projectsMainPageTitle": {
+    "en": "",
+    "de": ""
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "perth",
+      "title": {
+        "en": "",
+        "de": ""
+      },
+      "url": "",
+      "isMain": true
+    },
+    {
+      "id": 2,
+      "name": "perth2",
+      "title": {
+        "en": "",
+        "de": ""
+      },
+      "url": "",
+      "isMain": true
+    },
+    {
+      "id": 3,
+      "name": "perth3",
+      "title": {
+        "en": "",
+        "de": ""
+      },
+      "url": "",
+      "isMain": true
+    }
+  ],
+  "cv": {
+
+  },
+  "contacts": {
+    "address": {
+      "icon": "",
+      "value": {
+        "en": "",
+        "de": ""
+      }
+    },
+    "phone": {
+      "icon": "",
+      "value": ""
+    },
+    "email": {
+      "icon": "",
+      "value": ""
+    }
+  }
+}
