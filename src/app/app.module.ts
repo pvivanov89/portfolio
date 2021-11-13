@@ -13,6 +13,7 @@ import { ProjectDetailsComponent } from './routes/project-details/project-detail
 import { ProjectsListComponent } from './routes/projects-list/projects-list.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { EmbeddedProjectComponent } from './components/embedded-project/embedded-project.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -31,7 +32,8 @@ const useLang = langs.find(x => navigator.language.indexOf(x) > 0) ? navigator.l
     LayoutComponent,
     NoSanitizePipe,
     ProjectDetailsComponent,
-    ProjectsListComponent
+    ProjectsListComponent,
+    EmbeddedProjectComponent
   ],
   imports: [
     BrowserModule,

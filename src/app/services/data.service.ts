@@ -8,14 +8,9 @@ import { TranslateService } from '@ngx-translate/core';
   providedIn: 'root'
 })
 export class DataService {
+  private _apiData: BehaviorSubject<any> = new BehaviorSubject<any>(undefined);
   private _data: BehaviorSubject<any> = new BehaviorSubject<any>(undefined);
   data$ = this._data.asObservable();
-
-  defaultLang = 'en';
-  langs = ['en', 'de'];
-  useLang = this.langs.find(x => navigator.language.indexOf(x) > 0)
-    ? navigator.language : this.defaultLang;
-  language$: BehaviorSubject<string> = new BehaviorSubject<string>(this.useLang);
 
   constructor(private http: HttpClient, private translateService: TranslateService) {
   }
@@ -24,16 +19,8 @@ export class DataService {
     return this.http.get<any>('/assets/data/data.json?cb=' + new Date().getTime()).pipe(
       take(1),
       map(r => {
-        const lang = this.language$.getValue();
-        Object.keys(r).forEach(key => {
-          const value = r[key];
-          if (value[lang]) {
-            Object.keys(value[lang]).forEach(langKey => {
-              value[langKey] = value[lang][langKey];
-            })
-          }
-        })
-        return r;
+        this._apiData.next({...r});
+        return this.mapTranslations(r, this.translateService.getBrowserLang());
       }),
       tap(r => {
         this._data.next(r);
@@ -41,7 +28,25 @@ export class DataService {
     )
   }
 
-  getLang(): string {
-    return this.language$.getValue();
+  mapTranslations(data: any, lang: string) {
+    Object.keys(data).forEach(key => {
+      if (Array.isArray(data[key])) {
+        data[key].map(el => {
+          return this.mapKeys(el, lang);
+        })
+      } else {
+        data[key] = this.mapKeys(data[key], lang);
+      }
+    })
+    return data;
+  }
+
+  mapKeys(value: any, lang: string) {
+    if (value[lang]) {
+      Object.keys(value[lang]).forEach(langKey => {
+        value[langKey] = value[lang][langKey];
+      })
+    }
+    return value;
   }
 }
