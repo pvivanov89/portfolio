@@ -64,20 +64,15 @@
   "contacts": {
     "address": {
       "icon": "",
-      "en": {
-        "value": ""
-      },
-      "de": {
-        "value": ""
-      }
+      "value": "Jena"
     },
     "phone": {
       "icon": "",
-      "value": ""
+      "value": "099484747"
     },
     "email": {
       "icon": "",
-      "value": ""
+      "value": "geo@geo.com"
     }
   }
 }
