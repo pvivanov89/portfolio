@@ -7,6 +7,10 @@ import { HomeComponent } from './routes/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NoSanitizePipe } from './pipes/no-sanitize';
+import { ProjectDetailsComponent } from './routes/project-details/project-details.component';
+import { ProjectsListComponent } from './routes/projects-list/projects-list.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { LayoutComponent } from './components/layout/layout.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    NoSanitizePipe,
+    ProjectDetailsComponent,
+    ProjectsListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
