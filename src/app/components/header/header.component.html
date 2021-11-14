@@ -1,22 +1,28 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active ps-0" aria-current="page"
+        <a class="nav-link ps-0"
+           aria-current="page"
            routerLink="/"
            fragment="about"
+           [class.active]="fragment === 'about'"
         >About</a>
         <a class="nav-link"
            routerLink="/"
-           fragment="portfolio">portfolio</a>
+           fragment="portfolio"
+           [class.active]="fragment === 'portfolio'"
+        >portfolio</a>
         <a class="nav-link" routerLink="/"
-           fragment="resume"
+           fragment="resume" [class.active]="fragment === 'resume'"
         >resume</a>
         <a class="nav-link" routerLink="/"
            fragment="contact"
+           [class.active]="fragment === 'contact'"
         >contact</a>
       </div>
     </div>
