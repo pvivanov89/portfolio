@@ -1,6 +1,6 @@
 <ng-container *ngIf="dataService.data$ | async as data">
   <!-- main -->
-  <section id="about" class="content-section py-5">
+  <section id="about" class="content-section pb-5">
     <div class="row">
       <div class="col-sm-12 col-md-4">
         <h2>{{data.profile.name}}</h2>
@@ -34,6 +34,8 @@
     <div class="row">
       <div class="col-sm-12 mb-5">
         <h1>{{data.profile.projectsMainPageTitle}}</h1>
+        <h5 class="cursor-pointer"
+          style="text-decoration: underline" routerLink="/projects">More projects</h5>
       </div>
     </div>
 

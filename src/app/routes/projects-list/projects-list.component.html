@@ -1,1 +1,12 @@
-<p>projects-list works!</p>
+<ng-container *ngIf="dataService.data$ | async as data">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <ul class="list-group list-group-flush">
+        <li
+          *ngFor="let item of data.projects"
+          routerLink="/projects/{{item.name}}"
+          class="list-group-item bg-transparent cursor-pointer py-4 fs-4">{{item.title}}</li>
+      </ul>
+    </div>
+  </div>
+</ng-container>
