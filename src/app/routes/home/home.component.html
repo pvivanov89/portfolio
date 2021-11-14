@@ -30,9 +30,9 @@
   <!-- about end -->
 
   <!-- portfolio -->
-  <section id="portfolio" class="content-section py-5">
+  <section id="portfolio" class="content-section d-flex flex-column justify-content-center">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 mb-5">
         <h1>{{data.profile.projectsMainPageTitle}}</h1>
       </div>
     </div>
@@ -43,8 +43,8 @@
            routerLink="/projects/{{item.name}}"
       >
         <ng-container *ngIf="item.isMain">
-          <h3>{{item.title}}</h3>
-          <img class="w-auto"
+          <h3 style="height: 80px">{{item.title}}</h3>
+          <img class="w-100"
                [src]="item.imageUrl" alt="">
         </ng-container>
 
