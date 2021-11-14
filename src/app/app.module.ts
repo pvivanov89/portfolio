@@ -20,7 +20,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 const defaultLang = 'en';
-const langs = ['en', 'de'];
+const langs = ['en'];
 const useLang = langs.find(x => navigator.language.indexOf(x) > 0) ? navigator.language : defaultLang;
 
 @NgModule({
