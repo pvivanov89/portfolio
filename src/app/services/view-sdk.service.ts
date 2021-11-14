@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +28,7 @@ export class ViewSDKClient {
   previewFile(divId: string, viewerConfig: any) {
     const config: any = {
       /* Pass your registered client id */
-      clientId: '3ee5a59b2f984319848405c565909544',
+      clientId: environment.adobe,
     };
     if (divId) { /* Optional only for Light Box embed mode */
       /* Pass the div id in which PDF should be rendered */
