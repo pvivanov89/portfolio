@@ -62,11 +62,17 @@
 
   <!-- contact -->
   <section id="contact" class="content-section py-5 d-flex">
-    <div class="row align-self-center">
-      <div class="col-sm-12 col-md-4 bg-light py-3">
-        <p>{{data.contacts.address.icon}} {{data.contacts.address.value}}</p>
-        <p>{{data.contacts.phone.icon}} {{data.contacts.phone.value}}</p>
-        <p>{{data.contacts.email.icon}} {{data.contacts.email.value}}</p>
+    <div class="row align-self-center d-flex w-100">
+      <div class="col-sm-12 col-md-4 py-3 contacts">
+        <p class="d-flex"><span class="material-icons me-3">{{data.contacts.address.icon}}</span> {{data.contacts.address.value}}</p>
+
+        <a href="tel:{{data.contacts.phone.value}}" target="_blank">
+          <p class="d-flex"><span class="material-icons me-3">{{data.contacts.phone.icon}}</span> {{data.contacts.phone.value}}</p>
+        </a>
+
+        <a href="mailto:{{data.contacts.email.value}}" target="_blank">
+          <p class="d-flex"><span class="material-icons me-3">{{data.contacts.email.icon}}</span> {{data.contacts.email.value}}</p>
+        </a>
       </div>
     </div>
   </section>

@@ -63,15 +63,15 @@
   },
   "contacts": {
     "address": {
-      "icon": "",
+      "icon": "home",
       "value": "Jena"
     },
     "phone": {
-      "icon": "",
+      "icon": "phone",
       "value": "099484747"
     },
     "email": {
-      "icon": "",
+      "icon": "email",
       "value": "geo@geo.com"
     }
   }
