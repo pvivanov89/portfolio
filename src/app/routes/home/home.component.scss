@@ -9,3 +9,9 @@
     color: rgb(33, 37, 41);
   }
 }
+
+#portfolio {
+  @media screen and (max-width: 600px) {
+    height: auto;
+  }
+}
