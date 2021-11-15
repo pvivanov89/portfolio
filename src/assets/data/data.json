@@ -6,7 +6,7 @@
       "name": "Dr. Pavel Ivanov",
       "subTitle": "Data Scientist",
       "subText": "sub text",
-      "mainText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "mainText": "Lorem Ipsum is simply dummy \n text of 55 the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "projectsMainPageTitle": "Projects"
     },
     "de": {
@@ -64,15 +64,15 @@
   "contacts": {
     "address": {
       "icon": "pin_drop",
-      "value": "Jena"
+      "value": "Krautgasse 15, 07743 Jena, Germany"
     },
     "phone": {
       "icon": "phone",
-      "value": "099484747"
+      "value": "+49 17647125780"
     },
     "email": {
       "icon": "email",
-      "value": "geo@geo.com"
+      "value": "pvivanov89@gmail.com"
     }
   }
 }
