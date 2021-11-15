@@ -56,26 +56,196 @@
   </section>
   <!-- portfolio end -->
 
-  <section id="resume" class="content-section">
-    <div id='pdf-div' class='pdf-view'></div>
+  <section id="resume" class="content-section" style="height: auto">
+   <!-- <div id='pdf-div' class='pdf-view'></div>-->
+
+    <div class="row bg-light">
+      <div class="col-sm-12 text-center mb-3">
+        <h2 class="text-primary">
+          <a href="/assets/CV_EN_Ivanov_DatA.pdf" download>CV DR. PAVEL IVANOV (Download)</a></h2>
+      </div>
+      <div class="col-sm-12 col-md-4 d-flex flex-column border-end left-side-cv">
+        <h4 class="text-center text-primary">DATA SCIENTIST</h4>
+        <div class="pt-3">
+          <h5>Contact Info</h5>
+          <div class="contacts">
+            <ng-container [ngTemplateOutlet]="contacts" [ngTemplateOutletContext]="{isCv: true}"></ng-container>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column mt-2">
+          <h5>Languages</h5>
+          <span>Russian</span>
+          <span>English</span>
+          <span>German</span>
+        </div>
+
+        <div class="pt-3">
+          <h5>Computer and software skills</h5>
+          <div>
+            <p>
+              <b>Python</b>: Spyder, Jupyter Notebook,
+              Google Colab
+            </p>
+            <p>
+              <b>Modules</b>: Scikit-Learn, Pandas,
+              TensorFlow, TensorHub, Numpy,
+              Matplotlib, Bokeh, Plotly
+            </p>
+          </div>
+
+          <div class="mt-2">
+            <p>
+              MS Office, Adobe Illustrator,
+              CorelDraw, ImageJ, OPUS, Omnic,
+              DiffracEva, Origin, Slicer
+            </p>
+          </div>
+
+          <div class="mt-2">
+            <h5>Hobbies</h5>
+            <p>Board games, traveling, playing the
+              guitar, short films, event management</p>
+          </div>
+
+          <div class="mt-2">
+            <h5>Voluntary work</h5>
+            <div class="d-flex justify-content-between">
+              <span>Cellu l’art – Festival
+                Jena e.V.</span>
+              <span class="text-primary">Since Oct. 2018</span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <span>Board Member</span>
+              <span class="text-primary">Since July 2020</span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <span>Int.Ro Jena</span>
+              <span class="text-primary">Oct. 2018 - May 2021</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="py-3">
+          <h5>Social media</h5>
+          <div class="d-flex justify-content-between">
+            <a href="https://www.linkedin.com/in/pavel-v-ivanov/" target="_blank">Linkedin</a>
+            <a href="https://www.xing.com/profile/Pavel_Ivanov27" target="_blank">Xing</a>
+            <a href="https://www.facebook.com/ipavel89" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-8 cv-right-side">
+        <h4 class="text-center">EDUCATION</h4>
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between py-1">
+            <span><i>Master’s in engineering geology and hydrogeology</i></span>
+            <span class="text-primary"><i>Sept. 2006 – Jun. 2012</i></span>
+          </div>
+
+          <div class="d-flex justify-content-between py-1">
+            <span><i>PhD in Earth Sciences</i></span>
+            <span class="text-primary"><i>Okt. 2012 – Aug. 2016</i></span>
+          </div>
+          <p>Lomonosov Moscow State University, Dept. Of Geology</p>
+        </div>
+
+        <h4 class="text-center">OCCUPATION</h4>
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-between py-1">
+            <span><i>Research associate</i></span>
+            <span class="text-primary"><i>Since Nov. 2016</i></span>
+          </div>
+          <p>Friedrich-Schiller-University Jena, Institute of Geosciences</p>
+
+          <div class="d-flex justify-content-between py-2">
+            <span><i>Leading research engineer</i></span>
+            <span class="text-primary"><i>Feb. 2012 – Nov. 2016</i></span>
+          </div>
+          <p>Lomonosov Moscow State University, Dept. Of Geology</p>
+
+          <div class="d-flex justify-content-between py-1">
+            <span><i>Research trainee / Research engineer</i></span>
+            <span class="text-primary"><i>Feb. 2012 – Nov. 2016</i></span>
+          </div>
+          <p>Sergeev Institute of Geoecology of the Russian Academy of Science</p>
+
+        </div>
+
+        <h4 class="text-center">EXPERIENCE IN DATA SCIENCE</h4>
+        <span class="fw-bolder">Professional Education</span>
+        <ul>
+          <li>Online course „Using Python for Research”, Harvard University</li>
+          <li>Online course „Complete Machine Learning & Data Science
+            Bootcamp 2022”, Zero to Mastery inc.</li>
+        </ul>
+
+        <span class="fw-bolder">Skills and Tasks</span>
+        <ul>
+          <li>Clean-up, preparation and evaluation of large data sets;</li>
+          <li>Visualization of geospatial data;</li>
+          <li>Machine learning: modelling of structured data sets (regression,
+            clustering, classification);</li>
+          <li>Graphical representation of the results.</li>
+        </ul>
+
+        <h4 class="text-center">MAIN PROFICIENCES</h4>
+        <ul>
+          <li>Planning and carrying out the scientific research;</li>
+          <li>Collection and statistical analysis of the experimental data;</li>
+          <li>Presentation of scientific projects and findings at conferences and
+            specialist meetings;</li>
+          <li>Preparation of publications and reports;</li>
+          <li>Building of interdisciplinary networks and their coordination;</li>
+          <li>Search for and application for funding;</li>
+          <li>Supervision of students’ scientific works.</li>
+        </ul>
+
+        <span class="fw-bolder">Other relevant skills</span>
+        <ul>
+          <li>Good understanding of statistical laws and patterns (correlation,
+            causality, association, significance);</li>
+          <li>Theoretical knowledge about basic machine learning algorithms
+            (Random Forest, K-Neighbors, K-Means, PCA, regression, etc.);</li>
+          <li>Machine learning: modelling of structured data sets (regression,
+            clustering, classification);</li>
+          <li>Soil microscopy and statistical analysis of 2D and 3D spectral data,
+            image analysis, 3D reconstructions.</li>
+        </ul>
+
+      </div>
+    </div>
+
   </section>
 
   <!-- contact -->
   <section id="contact" class="content-section py-5 d-flex">
     <div class="row align-self-center d-flex w-100">
       <div class="col-sm-12 col-md-4 py-3 contacts">
-        <p class="d-flex"><span class="material-icons me-3">{{data.contacts.address.icon}}</span> {{data.contacts.address.value}}</p>
-
-        <a href="tel:{{data.contacts.phone.value}}" target="_blank">
-          <p class="d-flex"><span class="material-icons me-3">{{data.contacts.phone.icon}}</span> {{data.contacts.phone.value}}</p>
-        </a>
-
-        <a href="mailto:{{data.contacts.email.value}}" target="_blank">
-          <p class="d-flex"><span class="material-icons me-3">{{data.contacts.email.icon}}</span> {{data.contacts.email.value}}</p>
-        </a>
+        <ng-container [ngTemplateOutlet]="contacts"></ng-container>
       </div>
     </div>
   </section>
   <!-- contact end -->
 
+  <ng-template #contacts let-isCv="isCv">
+    <p class="d-flex"
+       [class.my-1]="isCv"
+    ><span class="material-icons me-3">{{data.contacts.address.icon}}</span> {{data.contacts.address.value}}</p>
+
+    <a href="tel:{{data.contacts.phone.value}}" target="_blank">
+      <p [class.my-1]="isCv"
+        class="d-flex"><span class="material-icons me-3">{{data.contacts.phone.icon}}</span> {{data.contacts.phone.value}}</p>
+    </a>
+
+    <a href="mailto:{{data.contacts.email.value}}" target="_blank">
+      <p [class.my-1]="isCv"
+        class="d-flex"><span class="material-icons me-3">{{data.contacts.email.icon}}</span> {{data.contacts.email.value}}</p>
+    </a>
+  </ng-template>
 </ng-container>
+
+
