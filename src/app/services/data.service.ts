@@ -20,7 +20,7 @@ export class DataService {
       take(1),
       map(r => {
         this._apiData.next({...r});
-        return this.mapTranslations(r, this.translateService.getBrowserLang());
+        return this.mapTranslations(r, 'en');
       }),
       tap(r => {
         this._data.next(r);
