@@ -21,6 +21,7 @@ export class ProjectDetailsComponent implements OnInit, OnDestroy {
     this.activatedRoute.params
       .pipe(takeUntil(this.destroy$))
       .subscribe(params => {
+        window.scroll(0,0);
         this.projectId = params.name;
         this.project = this.dataService.getProjectByName(this.projectId);
       })

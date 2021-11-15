@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { ViewSDKClient } from '../../services/view-sdk.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,13 @@ import { ViewSDKClient } from '../../services/view-sdk.service';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  constructor(public dataService: DataService, private viewSDKClient: ViewSDKClient) { }
+  constructor(
+    public dataService: DataService,
+    private viewSDKClient: ViewSDKClient,
+    private activatedRoute: ActivatedRoute
+    ) { }
 
   ngOnInit(): void {
-
   }
 
   ngAfterViewInit() {
@@ -22,6 +26,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
         /* Pass the embed mode option here */
         embedMode: 'SIZED_CONTAINER'
       });
+    });
+
+    this.activatedRoute.fragment.subscribe((fragment: string) => {
+      if (fragment && document.getElementById(fragment) != null) {
+        document.getElementById(fragment).scrollIntoView({ behavior: "smooth" });
+      }
     });
   }
 }
