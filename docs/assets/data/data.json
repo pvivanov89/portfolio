@@ -28,7 +28,7 @@
         "title": ""
       },
       "url": "https://www.kaggle.com/embed/pavelivanov89/perth-suburb-ranking-and-visualization?kernelSessionId=79218528",
-      "imageUrl": "https://via.placeholder.com/400x300",
+      "imageUrl": "/assets/projects/Perth-Visual.png",
       "isMain": true
     },
     {
@@ -41,7 +41,7 @@
         "title": ""
       },
       "url": "https://www.kaggle.com/embed/pavelivanov89/analysis-of-heart-failure-set?kernelSessionId=79378431",
-      "imageUrl": "https://via.placeholder.com/400x300",
+      "imageUrl": "/assets/projects/HeartFailure.png",
       "isMain": true
     },
     {
@@ -54,7 +54,7 @@
         "title": ""
       },
       "url": "https://www.kaggle.com/embed/pavelivanov89/price-prediction-regression-model-84?kernelSessionId=79300432",
-      "imageUrl": "https://via.placeholder.com/400x300",
+      "imageUrl": "/assets/projects/PricePred.png",
       "isMain": true
     }
   ],
