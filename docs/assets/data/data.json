@@ -63,7 +63,7 @@
   },
   "contacts": {
     "address": {
-      "icon": "home",
+      "icon": "pin_drop",
       "value": "Jena"
     },
     "phone": {
