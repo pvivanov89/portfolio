@@ -5,8 +5,8 @@
     "en": {
       "name": "Dr. Pavel Ivanov",
       "subTitle": "Data Scientist",
-      "subText": "sub text",
-      "mainText": "Lorem Ipsum is simply dummy \n text of 55 the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "subText": "I am a PostDoc natural scientist passionate about finding patterns in data. Currently, I am looking for a career start in Data Science",
+      "mainText": "After almost 10 years in Academia, I seek new career oportunities in Data Science. As a PostDoc researcher, I have been investigating contaminated soils to find the linkages between composition, microbial population, microstructure, and other parameters. These activities produce data sets, both structured (tables) and unstructured (i.e., microscopy pictures and spectral data) which have to be summarized statistically, assessed critically, and presented graphically. Since Summer 2021, I have been learning new tools and skills for data analysis and visualization. I completed two online courses where I learned the basics of machine learning in Python as well as the basic modules for data analysis (Pandas, Numpy, Scikit-Learn, Matplotlib, Bokeh, Plotly, Seaborn, etc.). During these months, learning by doing has become my motto - after the courses I tried out the new skills and analyzed a few training data sets from scratch. The results are below.",
       "projectsMainPageTitle": "Projects"
     },
     "de": {
@@ -48,7 +48,7 @@
       "id": 3,
       "name": "price-prediction",
       "en": {
-        "title": "Price prediction regression model - 84%"
+        "title": "Price prediction regression model"
       },
       "de": {
         "title": ""
