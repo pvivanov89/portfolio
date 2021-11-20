@@ -18,11 +18,15 @@ enum Sections {
 export class HeaderComponent implements OnInit {
   fragment: string;
   isMenuCollapsed = true;
+  inited;
 
   constructor(private activatedRoute: ActivatedRoute,
               private navService: NavService
   ) {
     this.navService.scrollSub$.subscribe(activeNumber => {
+      if (!this.inited) {
+        return;
+      }
       this.fragment = activeNumber === 0 ? '' : Sections[activeNumber];
       if (history.pushState) {
         history.replaceState(null, null, this.fragment ? `#${this.fragment}` : '');
@@ -37,6 +41,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.inited = true;
   }
 
 }
