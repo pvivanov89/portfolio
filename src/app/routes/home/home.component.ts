@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import { ViewSDKClient } from '../../services/view-sdk.service';
 import { ActivatedRoute } from '@angular/router';
 import { NavService } from '../../services/nav.service';
 
@@ -23,7 +22,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor(
     public dataService: DataService,
-    private viewSDKClient: ViewSDKClient,
     private activatedRoute: ActivatedRoute,
     private navService: NavService
     ) { }
@@ -36,14 +34,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.portfolioOffset = this.portfolioEl.nativeElement.offsetTop;
     this.resumeOffset = this.resumeEl.nativeElement.offsetTop;
     this.contactOffset = this.contactEl.nativeElement.offsetTop;
-
-    this.viewSDKClient.ready().then(() => {
-      /* Invoke file preview */
-      this.viewSDKClient.previewFile('pdf-div', {
-        /* Pass the embed mode option here */
-        embedMode: 'SIZED_CONTAINER'
-      });
-    });
 
     this.activatedRoute.fragment.subscribe((fragment: string) => {
       if (fragment && document.getElementById(fragment) != null) {
