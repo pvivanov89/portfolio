@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   fragment: string;
+  isMenuCollapsed: boolean;
 
   constructor(private activatedRoute : ActivatedRoute) {
     this.activatedRoute.fragment.pipe().subscribe(f => {

@@ -14,6 +14,7 @@ import { ProjectsListComponent } from './routes/projects-list/projects-list.comp
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { EmbeddedProjectComponent } from './components/embedded-project/embedded-project.component';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -40,6 +41,7 @@ const useLang = langs.find(x => navigator.language.indexOf(x) > 0) ? navigator.l
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbCollapseModule,
     TranslateModule.forRoot({
       defaultLanguage: useLang,
       loader: {
