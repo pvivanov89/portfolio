@@ -1,5 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NavService } from '../../services/nav.service';
+
+enum Sections {
+  'def',
+  'about',
+  'portfolio',
+  'resume',
+  'contact'
+}
 
 @Component({
   selector: 'app-header',
@@ -8,9 +17,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   fragment: string;
-  isMenuCollapsed: boolean;
+  isMenuCollapsed = true;
 
-  constructor(private activatedRoute : ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute,
+              private navService: NavService
+  ) {
+    this.navService.scrollSub$.subscribe(activeNumber => {
+      this.fragment = activeNumber === 0 ? '' : Sections[activeNumber];
+      if (history.pushState) {
+        history.replaceState(null, null, this.fragment ? `#${this.fragment}` : '');
+      } else {
+        location.hash = this.fragment ? `#${this.fragment}` : '';
+      }
+    })
+
     this.activatedRoute.fragment.pipe().subscribe(f => {
       this.fragment = f;
     })

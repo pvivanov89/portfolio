@@ -1,6 +1,6 @@
 <ng-container *ngIf="dataService.data$ | async as data">
   <!-- main -->
-  <section id="about" class="content-section pb-md-5">
+  <section id="about" #about class="content-section pb-md-5">
     <div class="row">
       <div class="col-sm-12 col-md-4">
         <h2>{{data.profile.name}}</h2>
@@ -30,7 +30,7 @@
   <!-- about end -->
 
   <!-- portfolio -->
-  <section id="portfolio" class="content-section d-flex flex-column justify-content-center">
+  <section id="portfolio" #portfolio class="content-section d-flex flex-column justify-content-center">
     <div class="row">
       <div class="col-sm-12 mb-5">
         <h1>{{data.profile.projectsMainPageTitle}}</h1>
@@ -55,7 +55,7 @@
   </section>
   <!-- portfolio end -->
 
-  <section id="resume" class="content-section" style="height: auto">
+  <section id="resume" #resume class="content-section" style="height: auto">
    <!-- <div id='pdf-div' class='pdf-view'></div>-->
 
     <div class="row bg-light">
@@ -226,7 +226,7 @@
   </section>
 
   <!-- contact -->
-  <section id="contact" class="content-section py-5 d-flex">
+  <section id="contact" #contact class="content-section py-5 d-flex">
     <div class="row align-self-center d-flex w-100">
       <div class="col-sm-12 col-md-4 py-3 contacts">
         <ng-container [ngTemplateOutlet]="contacts"></ng-container>
