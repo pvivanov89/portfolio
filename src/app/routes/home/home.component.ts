@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     this.activatedRoute.fragment.subscribe((fragment: string) => {
       if (fragment && document.getElementById(fragment) != null) {
-    //    document.getElementById(fragment).scrollIntoView({ behavior: "smooth" });
+        document.getElementById(fragment).scrollIntoView({ behavior: "smooth" });
       }
     });
   }

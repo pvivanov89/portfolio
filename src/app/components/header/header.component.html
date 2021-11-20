@@ -9,20 +9,24 @@
       <div class="navbar-nav">
         <a class="nav-link ps-0"
            aria-current="page"
-           href="#about"
+           routerLink="/"
+           fragment="about"
            [class.active]="fragment === 'about'"
            (click)="isMenuCollapsed = true"
         >About</a>
         <a class="nav-link"
-           href="#portfolio"
+           routerLink="/"
+           fragment="portfolio"
            [class.active]="fragment === 'portfolio'"
            (click)="isMenuCollapsed = true"
         >portfolio</a>
-        <a class="nav-link" href="#resume"
+        <a class="nav-link" routerLink="/"
+           fragment="resume"
            [class.active]="fragment === 'resume'"
            (click)="isMenuCollapsed = true"
         >resume</a>
-        <a class="nav-link" href="#contact"
+        <a class="nav-link" routerLink="/"
+           fragment="contact"
            [class.active]="fragment === 'contact'"
            (click)="isMenuCollapsed = true"
         >contact</a>
